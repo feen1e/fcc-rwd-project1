@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <title>Survey Form</title>
+    </head>
+    <body>
+    <main>
+        <section id="survey-beginning">
+            <h1 id="title">Healthy Bread Rolls Survey Form</h1>
+            <p id="description">Thank you for taking the time to provide feedback. Please answer the following questions about your
+            experience with our shop.</p>
+        </section>
+        <section id="form-background">
+            <form id="survey-form">
+                <label for="name" id="name-label">Name:<br></label>
+                <input id="name" type="text" required placeholder="Enter your name:">
+                <label for="email" id="email-label">Email:<br></label>
+                <input id="email" required type="email" placeholder="Enter your email:">
+                <label for="number" id="number-label">Age:<br></label>
+                <input id="number" type="number" placeholder="Enter your age:" min="13" max="120">
+                <label for="dropdown">Which option best describes your current occupation?<br></label>
+                <select id="dropdown">
+                    <option>Select an option</option>
+                    <option>Student</option>
+                    <option>Full Time Job</option>
+                    <option>Part Time Job</option>
+                    <option>Prefer not to say</option>
+                    <option>Other</option>
+                </select>
+                <label>Would you recommend our shop to your family or friends?<br></label>
+                <div class="option">
+                    <label for="def-yes">
+                        <input id="def-yes" value="def-yes" name="recommend" type="radio"> Definitely yes
+                    </label>
+                </div>
+                <div class="option">
+                    <label for="prob-yes">
+                        <input id="prob-yes" value="prob-yes" name="recommend" type="radio"> Probably yes
+                    </label>
+                </div>
+                <div class="option">
+                    <label for="maybe">
+                        <input id="maybe" value="maybe" name="recommend" type="radio"> Not sure
+                    </label>
+                </div>
+                <div class="option">
+                    <label for="prob-no">
+                        <input id="prob-no" value="prob-no" name="recommend" type="radio"> Probably no
+                    </label>
+                </div>
+                <div class="option">
+                    <label for="def-no">
+                        <input id="def-no" value="def-no" name="recommend" type="radio"> Definitely no
+                    </label>
+                </div>
+                <label>What did you like about the shop?<br></label>
+                <div class="option">
+                    <label>
+                        <input value="products" type="checkbox"> The products
+                    </label>
+                </div>
+                <div class="option">
+                    <label>
+                        <input type="checkbox" value="interior"> The interior
+                    </label>
+                </div>
+                <div class="option">
+                    <label>
+                        <input type="checkbox" value="prices"> The prices
+                    </label>
+                </div>
+                <div class="option">
+                    <label>
+                        <input type="checkbox" value="clerks"> The clerks
+                    </label>
+                </div>
+                <div class="option">
+                    <label>
+                        <input type="checkbox" value="location"> The location
+                    </label>
+                </div>
+                <label for="suggestions">Do you have any suggestions or comments? (optional)</label>
+                    <textarea id="suggestions" placeholder="Enter your thoughts here..."></textarea>
+                <label id=submit-button>
+                    <input id="submit" type="submit">
+                </label>
+            </form>
+        </section>
+    </main>
+    </body>
+</html>
